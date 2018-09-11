@@ -11,7 +11,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
 h1 {
   font-size: 1.25em;
   color: darkslategrey;
@@ -35,20 +34,19 @@ img {
 }
 
 /* =================================
-  Base Layout Style
+  Base Layout Styles
 ==================================== */
 
 /* ---- Navigation ---- */
 
 .name {
-  font-family: 'Lato', sans-serif;
-
+  font-size: 1.50em;
+  font-weight: bold;
+  margin: 0;
 }
 
 .main-nav {
-  margin-top: 30px;
-  background-color: #ffffe0;
-  padding: 20px;
+  margin-top: 5px;
 }
 
 .main-nav a {
@@ -75,22 +73,22 @@ img {
   padding: 10px 15px;
 }
 
-.bottom {
-  margin: 10px 20px;;
+.bottom-nav {
+  margin-top: 10px;
   display: block;
   border-top: 1px solid silver;
   padding-top: 30px;
+  align-items: top;
 }
 
-.bottom .name {
+.bottom-nav .name {
   float: left;
 }
-
 
 span {
   margin-right: 30px;
   float: right;
-  padding-top: 30px;
+  padding-top: 17px;
   font-weight: bold;
 }
 
@@ -99,38 +97,28 @@ span {
   width: 90%;
   margin: 0 auto;
 }
-
 /* ---- Layout Containers ---- */
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.portfolio {
+  padding: 30px 20px;
+
+}
 
 .main-header {
   padding: 1em 0;
   background-color: snow;
 }
 
-.container-pages,
-.skills {
-  width: 90%;
-  margin: 0 auto;
-}
-
-
-.portfolio,
-.skills {
-  padding: 30px 20px;
-
-}
-
-.container-pages {
+.container {
   margin-top: 30px;
   background-color: white;
   padding: 50px 10px;
-  text-align: center;
-}
-
-.skills {
-  margin-top: 30px;
-  background-color: #f8f8ff;
-  padding: 50px 30px;
   text-align: center;
 }
 
@@ -141,7 +129,7 @@ span {
 
 .main-footer {
   padding: 2em 0;
-  background-color: #ffffe0;
+  background-color: snow;
 }
 
 .banner {
@@ -152,7 +140,6 @@ span {
 
 .banner-image {
   width: 70%;
-  opacity: 0.8;
 }
 
 .main-footer ul {
@@ -166,12 +153,10 @@ span {
 @media (min-width: 768px) {
 
 .name {
-  font-size: 2.2em;
-}
 
+}
 .main-nav {
   text-align: center;
-  font-size: 1.2em;
 }
 
 .main-nav li {
@@ -180,100 +165,16 @@ span {
 }
 
 .main-nav a {
-  background-color: #ffffe0;
+  background-color: snow;
 }
 
 .main-nav a:hover {
-  background-color: #ffffe0;
+  background-color: snow;
   color: lightgrey;
 }
 
 .banner-image {
   float: right;
-  max-width: 300px;
-  padding-left: 20px;
-  padding-bottom: 20px;
 }
-
-.main-footer ul {
-  visibility: visible;
-  float: right;
-}
-
-.bottom-nav li {
-  display: inline-block;
-  padding-right: 30px;
-  padding-top: 40px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.bottom-nav a:hover {
-  transition: 0.4s;
-  color: lightgrey;
-}
-
-
-.marketing-page,
-.search-page,
-.travel-app,
-.map,
-.photo-gallery,
-.calculator {
-  width: 45%;
-  float: left;
-  margin-left: 20px;
-  max-width: 600px;
-  padding-bottom: 60px;
-}
-
-.photography,
-.graphic-design {
-  width: 25%;
-  display: inline-block;
-  margin-left: 20px;
-  max-width: 600px;
-  padding-bottom: 60px;
-}
-
-.bottom span {
-  display: none;
-}
-
-.clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
-
-}
-
-}
-
-@media (min-width: 1024px) {
-
-  .container-pages {
-    max-width: 2048px;
-  }
-
-  .marketing-page,
-  .search-page,
-  .travel-app,
-  .map,
-  .photo-gallery,
-  .calculator {
-    width: 30%;
-    float: left;
-    margin-left: 20px;
-    max-width: 600px;
-    padding-bottom: 60px;
-  }
-
-  .banner {
-    max-width: 1024px;
-  }
-
-  .banner p {
-    max-width: 600px;
-  }
 
 }
