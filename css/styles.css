@@ -41,7 +41,8 @@ img {
 /* ---- Navigation ---- */
 
 .name {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Playfair Display SC', serif;
+  letter-spacing: 10px;
 
 }
 
@@ -200,10 +201,16 @@ span {
   float: right;
 }
 
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
 .bottom-nav li {
   display: inline-block;
   padding-right: 30px;
-  padding-top: 40px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -250,6 +257,17 @@ span {
 }
 
 @media (min-width: 1024px) {
+
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffe0;
+  }
+
+  .main-nav {
+    margin-top: 0;
+  }
 
   .container-pages {
     max-width: 2048px;
